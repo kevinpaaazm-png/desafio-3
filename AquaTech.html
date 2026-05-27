@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- Cumple requisito de Control de Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>AquaTech - Infinity-Grid Dashboard</title>
+    <!-- Vinculación limpia a la hoja de estilos externa -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Menú de Navegación Transicional (Hybrid-Responsive) -->
+    <header class="main-header">
+        <div class="logo">AquaTech</div>
+        
+        <!-- Checkbox Hack para activar el menú sin JavaScript -->
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        
+        <!-- Label que funcionará como el botón de hamburguesa -->
+        <label for="menu-toggle" class="menu-btn">
+            <span class="icon icon-menu"></span>
+        </label>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#">Métricas</a></li>
+                <li><a href="#">Reportes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cuerpo Principal con Flexbox -->
+    <main class="dashboard-container">
+        
+        <header class="dashboard-banner">
+            <h1>Panel de Monitoreo en Tiempo Real</h1>
+            <p>Estado de las tecnologías IoT de calidad del agua</p>
+        </header>
+
+        <!-- Sección de Métricas IoT con CSS Grid Adaptativo -->
+        <section class="metrics-grid">
+            
+            <!-- Card 1: pH -->
+            <article class="metric-card">
+                <h3>Nivel de pH</h3>
+                <div class="metric-value">7.2</div>
+                <p class="metric-status status-ok">Óptimo</p>
+            </article>
+
+            <!-- Card 2: Oxígeno -->
+            <article class="metric-card">
+                <h3>Oxígeno Disuelto</h3>
+                <div class="metric-value">6.5 mg/L</div>
+                <p class="metric-status status-ok">Normal</p>
+            </article>
+
+            <!-- Card 3: Temperatura -->
+            <article class="metric-card">
+                <h3>Temperatura</h3>
+                <div class="metric-value">24.8 °C</div>
+                <p class="metric-status status-warning">Alerta Alta</p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 AquaTech - Sistema Control de Calidad</p>
+    </footer>
+
+</body>
+</html>
